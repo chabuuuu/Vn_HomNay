@@ -1,5 +1,6 @@
 //let's start by our home screen
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../components/bancobiet_card.dart';
@@ -79,9 +80,43 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               //now let's create the cards for the recent news
               Column(
-                children: NewsData.recentNewsData
+                children: [
+                StreamBuilder<QuerySnapshot>(
+                    stream: FirebaseFirestore.instance.collection("news").snapshots(),
+                    builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot){
+                      if (snapshot.hasData){
+                        final snap = snapshot.data!.docs;
+                        final lenght = snap.length;
+                        List<NewsData> breakingNewsData = [];
+                        for (int i = 0 ; i < lenght; i++){
+                          
+                          var index = i;
+                            var title = Text(snap[i]['title']).data.toString();
+                            var data = Text(snap[i]['data']).data.toString();
+                            NewsData newsData = NewsData(title, "", data, "", "https://statics.vinpearl.com/du-lich-vinh-Ha-Long-hinh-anh1_1625911963.jpg");
+                                breakingNewsData.add(newsData);
+                             
+                            
+                        } 
+                        
+                    return Column(
+                      children: breakingNewsData
                     .map((e) => NewsListTile(e))
                     .toList(),
+                    );
+                        
+
+                      }else{
+                        return SizedBox();
+                      }
+                    },
+
+                )
+                
+                
+                ,
+                
+                ]
               ),
             ],
           ),

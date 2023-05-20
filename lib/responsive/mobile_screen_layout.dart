@@ -86,6 +86,14 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
             label: '',
             backgroundColor: primaryColor,
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.baby_changing_station_sharp,
+              color: (_page == 5) ? primaryColor : secondaryColor,
+            ),
+            label: '',
+            backgroundColor: primaryColor,
+          ),
         ],
         onTap: navigationTapped,
         currentIndex: _page,

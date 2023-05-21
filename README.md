@@ -1,48 +1,8 @@
-# Instagram Clone
+VN HÔM NAY
 
-A completely Responsive Instagram App- Works on Android, iOS & Web! 
+Tên đội:Nhungnguoithocode
 
-## Features
-- Responsive Instagram UI
-- Email & Password Authentication
-- Share Posts with Caption
-- Display Posts with Caption
-- Like & Comment on Posts
-- Search Users
-- Follow Users
-- Display User Posts, Followers & Following
-- EVERYTHING REAL TIME
-- Sign Out
+MÔ TẢ DỰ ÁN
+CHỦ ĐỀ: Nhận thấy giới trẻ hiện nay lãng quên giá trị văn hóa truyền thống của nước ta, khiến cho các bạn trẻ đang tiêu thụ nhiều văn hóa phương Tây. Nên dự án VN HÔM NAY của nhóm sẽ là một ứng dụng truyền tải các văn hóa, phong tục,... thông qua các bài viết góp phần bảo tồn và truyền bá giá trị văn hóa truyền thống của Việt Nam đến với giới trẻ hiện nay.
 
-## YouTube
-I have created a tutorial based on this, do check it out on my channel [Rivaan Ranawat](https://youtu.be/BBccK1zTgxw) 
-
-<p align="center">
-  <img width="600" src="https://github.com/RivaanRanawat/instagram-flutter-clone/blob/master/screenshot.png" alt="Youtube Tutorial Image">
-</p>
-
-
-## Installation
-After cloning this repository, migrate to ```instagram-flutter-clone``` folder. Then, follow the following steps:
-- Create Firebase Project
-- Enable Authentication
-- Make Firestore Rules
-- Create Android, iOS & Web Apps
-- Take Web FirebaseOptions and put it in main function in main.dart file replacing my keys (My keys wont work as I deleted my project)
-Then run the following commands to run your app:
-```bash
-  flutter pub get
-  open -a simulator (to get iOS Simulator)
-  flutter run
-  flutter run -d chrome --web-renderer html (to see the best output)
-```
-
-## Tech Used
-**Server**: Firebase Auth, Firebase Storage, Firebase Firestore
-
-**Client**: Flutter, Provider
-    
-## Feedback
-
-If you have any feedback, please reach out to me at namanrivaan@gmail.com
-
+TỔNG QUAN: Ứng dụng cung cấp một môi trường học tập trực quan, dễ sử dụng và đa dạng nội dung, bao gồm các bài viết, câu chuyện, truyền thuyết, hình ảnh, video và thông tin thú vị về văn hóa Việt Nam. Người dùng có thể khám phá và học hỏi từng ngày với thông báo nhắc nhở và nâng cao kiến thức của mình.
